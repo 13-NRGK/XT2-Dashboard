@@ -288,7 +288,7 @@ body{
 
 /*Responsive maken*/
 
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 1500px) {
 		.sidebar{
 			width: 70px;
 		}
@@ -317,6 +317,15 @@ body{
 			left: 70px;
 		}
 
+		.card{
+			height: 400px;
+		}
+
+		td{
+			font-size: 1rem;
+			padding: 0.9rem 1rem;
+		}
+
 	}
 
 	@media only screen and (max-width: 960px) {
@@ -334,7 +343,11 @@ body{
 
 		td{
 			font-size: 1rem;
-			padding: 1.5rem 1rem;
+			padding: 1.1rem 1rem;
+		}
+
+		.card{
+			height: 515px;
 		}
 
 		
@@ -392,9 +405,13 @@ body{
 			grid-template-columns: 100%;
 		}
 
+		.card{
+			height: 425px;
+		}
+
 		td{
-			font-size: 0.9rem;
-			padding: 0.7rem 1rem;
+			font-size: 1rem;
+			padding: 0.9rem 1rem;
 		}
 
 		#nav-toggle:checked + .sidebar{
@@ -430,6 +447,30 @@ body{
 
 		.main-content{
 			width: 100%;
+		}
+
+		.card{
+			height: 350px;
+		}
+
+		td{
+			font-size: 0.9rem;
+			padding: 0.7rem 1rem;
+		}
+	}
+
+	@media only screen and (max-width: 450px) {
+		.main-content{
+			width: 100%;
+		}
+
+		.card{
+			height: 275px;
+		}
+
+		td{
+			font-size: 0.7rem;
+			padding: 0.5rem 1rem;
 		}
 	}
 

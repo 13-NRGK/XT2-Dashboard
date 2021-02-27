@@ -164,7 +164,6 @@
 							</div>
 
 							<div class="card-body">
-								
 								<canvas id="doughnut-chart" width="100" height="50"></canvas>	
 							</div>	
 						</div>
@@ -202,7 +201,6 @@
 
 <script type="text/javascript">
 	new Chart(document.getElementById("line-chart"), {
-		responsive: true,
 		type: 'line',
 		data:{
 		    labels: [0,100,200,300,400,500,600,700,800,900,1000],
@@ -220,15 +218,15 @@
 		    ]
 		},
 		 options:{
+		 	responsive: true,
 		    title:{
-		    display: true,
-		    text: 'Vehicle environment'
+		    	display: true,
+		    	text: 'Vehicle environment'
 		    }
 		}
 	});
 
 	new Chart(document.getElementById("radar-chart"), {
-		responsive: true,
 	    type: 'radar',
 	    data: {
 	      labels: ["Nitrogen", "Oxygen", "Argon", "Carbon dioxide", "Neon"],
@@ -254,15 +252,15 @@
 	      ]
 	    },
 	    options: {
-	      title: {
-	        display: true,
-	        text: 'Atmosphere change of Earth and Mars'
-	      }
+	    	responsive: true,
+	      	title: {
+	        	display: true,
+	        	text: 'Atmosphere change of Earth and Mars'
+	      	}
 	    }
 	});
 	
 	new Chart(document.getElementById("doughnut-chart"), {
-		responsive: true,
 	    type: 'doughnut',
 	    data: {
 	      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
@@ -275,10 +273,11 @@
 	      ]
 	    },
 	    options: {
-	      title: {
-	        display: true,
-	        text: 'World Population traveling'
-	      }
+	    	responsive: true,
+	     	title: {
+	        	display: true,
+	        	text: 'World Population traveling'
+	      	}
 	    }
 	});
 	
